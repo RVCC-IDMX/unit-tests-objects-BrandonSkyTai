@@ -98,7 +98,6 @@ function isPetABaby(pet) {
  * breed must be the property name that is added
  */
 function addPetBreed(pet, str) {
-  d
   pet.breed = str;
   return pet;
 }

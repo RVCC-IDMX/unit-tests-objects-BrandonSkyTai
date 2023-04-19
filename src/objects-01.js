@@ -28,12 +28,12 @@
  */
 function makePetObject(name, age, species, hasFur, legs, bestFriend) {
   const pet = {
-    name: "peco",
+    name: 'peco',
     age: 1,
-    species: "cat",
+    species: 'cat',
     hasFur: true,
     legs: 4,
-    bestFriend: "yes"
+    bestFriend: 'yes',
   };
   return pet;
 }
@@ -76,7 +76,7 @@ function getPetAge(pet) {
  * permanently making a change to the passed object.
  */
 function setPetAge(pet, age) {
-  pet.age = 5;
+  pet.age = age;
   return pet;
 }
 
@@ -86,8 +86,9 @@ function setPetAge(pet, age) {
  * @returns {boolean} - true if the pet's age is < 1 , false otherwise
  */
 function isPetABaby(pet) {
-  if pet.age < 1;
-  return pet.age;
+  if (pet.age < 1
+  ) { return true; }
+  return false;
 }
 
 /**
